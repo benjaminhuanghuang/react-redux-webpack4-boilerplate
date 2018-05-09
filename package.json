@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "watch": "webpack --watch",
     "start": "webpack-dev-server --port 3131 --mode development --open",
-    "build": "webpack --mode production"
+    "build": "rimraf dist && webpack --mode production"
   },
   "repository": {
     "type": "git",
